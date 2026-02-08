@@ -28,13 +28,3 @@ Téléchargez la dernière version depuis [Releases](https://github.com/votre-us
 3. Sélectionnez la qualité
 4. Choisissez le dossier de destination
 5. Cliquez sur Télécharger
-
-## Technologies
-
-- Tauri + Rust
-- React + TypeScript
-- yt-dlp + ffmpeg
-
-## Licence
-
-MIT
