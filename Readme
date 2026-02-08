@@ -1,0 +1,40 @@
+# YTMP3
+
+Application de téléchargement YouTube audio/vidéo avec interface moderne.
+
+## Fonctionnalités
+
+- Téléchargement audio en MP3 (qualité réglable)
+- Téléchargement vidéo en MP4 (résolution réglable)
+- Support des playlists
+- Détection automatique des cookies navigateur
+- Interface utilisateur intuitive
+- Barre de progression en temps réel
+
+## Installation
+
+Téléchargez la dernière version depuis [Releases](https://github.com/votre-username/ytmp3/releases/latest)
+
+### Windows
+- Téléchargez le fichier `.msi` ou `.exe`
+- Exécutez l'installateur
+- Suivez les instructions
+
+
+## Utilisation
+
+1. Collez l'URL YouTube
+2. Choisissez le format (Audio/Vidéo)
+3. Sélectionnez la qualité
+4. Choisissez le dossier de destination
+5. Cliquez sur Télécharger
+
+## Technologies
+
+- Tauri + Rust
+- React + TypeScript
+- yt-dlp + ffmpeg
+
+## Licence
+
+MIT
