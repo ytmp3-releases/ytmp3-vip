@@ -1,30 +1,84 @@
-# YTMP3
+# YTMP3 VIP
 
-Application de téléchargement YouTube audio/vidéo avec interface moderne.
+**Convertisseur YouTube MP3 & MP4 pour Windows**  
+Local • Rapide • Sans pub • Sans limite
+
+---
+
+## Pourquoi YTMP3 VIP ?
+
+La conversion se fait **directement sur votre PC**, pas sur des serveurs distants.
+
+| | Sites en ligne | YTMP3 VIP |
+|---|---|---|
+| Vitesse | File d'attente | **10× plus rapide** |
+| Publicités | Partout | **Aucune** |
+| Limite | 3/jour | **Illimité** |
+| Qualité max | Variable | **MP3 320kbps / MP4 4K** |
+| Vie privée | Données sur serveurs tiers | **100% local** |
+
+---
 
 ## Fonctionnalités
 
-- Téléchargement audio en MP3 (qualité réglable)
-- Téléchargement vidéo en MP4 (résolution réglable)
-- Support des playlists
-- Détection automatique des cookies navigateur
-- Interface utilisateur intuitive
+### Gratuit
+- Téléchargement audio MP3 — 128 / 192 / 256 / 320 kbps
+- Sans publicité, sans limite
 - Barre de progression en temps réel
+
+### VIP — 15€ paiement unique, licence à vie
+- Téléchargement vidéo MP4 — SD 480p · HD 720p · FHD 1080p · QHD 1440p · 4K 2160p
+- Playlists complètes en un clic
+- Miniatures YouTube intégrées comme pochettes d'album
+- 3 ordinateurs simultanés par licence
+- Toutes les mises à jour futures incluses
+
+---
 
 ## Installation
 
-Téléchargez la dernière version depuis [Releases](https://github.com/votre-username/ytmp3/releases/latest)
+**Prérequis :** Windows 10 / 11 64 bits
 
-### Windows
-- Téléchargez le fichier `.msi` ou `.exe`
-- Exécutez l'installateur
-- Suivez les instructions
+1. Téléchargez `YTMP3.VIP_1.1.0_x64-setup.exe`
+2. Lancez l'installateur
+3. Suivez les instructions
 
+> **Windows SmartScreen affiche un avertissement ?** C'est normal pour un logiciel sans certificat de signature numérique. Cliquez sur **Informations complémentaires** → **Exécuter quand même**. Le logiciel ne contient aucun virus, aucun spyware, aucune barre d'outil.
+
+---
 
 ## Utilisation
 
-1. Collez l'URL YouTube
-2. Choisissez le format (Audio/Vidéo)
+1. Collez une URL YouTube (vidéo ou playlist)
+2. Choisissez le format — **MP3** ou **MP4**
 3. Sélectionnez la qualité
 4. Choisissez le dossier de destination
-5. Cliquez sur Télécharger
+5. Cliquez sur **Télécharger**
+
+Les fichiers sont automatiquement nommés. Les playlists sont rangées dans des sous-dossiers. Les MP3 incluent la miniature YouTube comme pochette d'album.
+
+---
+
+## Activation VIP
+
+1. Achetez votre licence sur **ytmp3.fr/vip**
+2. Récupérez votre clé dans l'email de confirmation
+3. Entrez la clé au premier lancement
+
+Gérez vos appareils activés (3 max) depuis **ytmp3.fr/vip**.
+
+---
+
+## Configuration requise
+
+| | |
+|---|---|
+| OS | Windows 10 / 11 64 bits |
+| Espace disque | 150 Mo |
+| Réseau | Connexion internet requise |
+
+---
+
+## Support
+
+**YTMP3@gmx.fr** — réponse sous 48h
