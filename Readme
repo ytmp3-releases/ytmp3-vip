@@ -1,83 +1,336 @@
-# YTMP3 VIP
-**Convertisseur YouTube MP3 & MP4 pour Windows**  
-Local • Rapide • Sans pub • Sans limite
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YTMP3 VIP — README</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap');
 
----
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --orange: #f0883e;
+    --hr: #21262d;
+  }
 
-## Pourquoi YTMP3 VIP ?
+  * { box-sizing: border-box; margin: 0; padding: 0; }
 
-La conversion se fait **directement sur votre PC**, pas sur des serveurs distants.
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 40px 20px;
+  }
 
-| | Sites en ligne | YTMP3 VIP |
-|---|---|---|
-| Vitesse | File d'attente | **10× plus rapide** |
-| Publicités | Partout | **Aucune** |
-| Limite | 3/jour | **Illimité** |
-| Qualité max | Variable | **MP3 320kbps / MP4 4K** |
-| Vie privée | Données sur serveurs tiers | **100% local** |
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+  }
 
----
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
 
-## Fonctionnalités
+  .tagline {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
 
-### Gratuit
-- Téléchargement audio MP3 — 128 / 192 / 256 / 320 kbps
-- Sans publicité, sans limite
-- Barre de progression en temps réel
+  .badges {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-bottom: 28px;
+  }
 
-### VIP — 15€ paiement unique, licence à vie
-- Téléchargement vidéo MP4 — SD 480p · HD 720p · FHD 1080p · QHD 1440p · 4K 2160p
-- Playlists complètes en un clic
-- Miniatures YouTube intégrées comme pochettes d'album
-- 3 ordinateurs simultanés par licence
-- Toutes les mises à jour futures incluses
+  hr {
+    border: none;
+    border-top: 1px solid var(--hr);
+    margin: 28px 0;
+  }
 
----
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
 
-## Installation
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--orange);
+    margin: 18px 0 8px;
+  }
 
-**Prérequis :** Windows 10 / 11 64 bits
+  p {
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
 
-1. Téléchargez `YTMP3.VIP_1.1.0_x64-setup.exe`
-2. Lancez l'installateur
-3. Suivez les instructions
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 12px;
+  }
 
-> **Windows SmartScreen affiche un avertissement ?** C'est normal pour un logiciel sans certificat de signature numérique. Cliquez sur **Informations complémentaires** → **Exécuter quand même**. Le logiciel ne contient aucun virus, aucun spyware, aucune barre d'outil.
+  ul li {
+    color: var(--muted);
+    padding: 3px 0 3px 18px;
+    position: relative;
+  }
 
----
+  ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--border);
+  }
 
-## Utilisation
+  ol {
+    padding-left: 22px;
+    margin-bottom: 12px;
+  }
 
-1. Collez une URL YouTube (vidéo ou playlist)
-2. Choisissez le format — **MP3** ou **MP4**
-3. Sélectionnez la qualité
-4. Choisissez le dossier de destination
-5. Cliquez sur **Télécharger**
+  ol li {
+    color: var(--muted);
+    padding: 3px 0;
+  }
 
-Les fichiers sont automatiquement nommés. Les playlists sont rangées dans des sous-dossiers. Les MP3 incluent la miniature YouTube comme pochette d'album.
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--orange);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.85em;
+  }
 
----
+  blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 10px 16px;
+    background: #1c2230;
+    border-radius: 0 6px 6px 0;
+    margin: 14px 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
 
-## Activation VIP
+  blockquote strong {
+    color: var(--text);
+  }
 
-1. Achetez votre licence sur **ytmp3.fr/vip**
-2. Récupérez votre clé dans l'email de confirmation
-3. Entrez la clé au premier lancement
+  strong {
+    color: var(--text);
+    font-weight: 700;
+  }
 
-Gérez vos appareils activés (3 max) depuis **ytmp3.fr/vip**.
+  /* TABLE COMPARISON */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 0.9rem;
+  }
 
----
+  thead tr {
+    background: var(--surface);
+  }
 
-## Configuration requise
+  th {
+    padding: 10px 14px;
+    text-align: left;
+    color: var(--text);
+    font-weight: 700;
+    border-bottom: 1px solid var(--border);
+  }
 
-| | |
-|---|---|
-| OS | Windows 10 / 11 64 bits |
-| Espace disque | 150 Mo |
-| Réseau | Connexion internet requise |
+  td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--hr);
+    color: var(--muted);
+  }
 
----
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
 
-## Support
+  tbody tr:hover td {
+    background: #1c2230;
+  }
 
-**YTMP3@gmx.fr** — réponse sous 48h
+  td:first-child { color: var(--text); }
+
+  td strong {
+    color: var(--green);
+  }
+
+  /* CONFIG TABLE */
+  .config-table td:first-child {
+    color: var(--muted);
+    width: 140px;
+  }
+  .config-table td:last-child {
+    color: var(--text);
+  }
+
+  /* SECTION */
+  section {
+    margin-bottom: 10px;
+  }
+
+  .support {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+  }
+
+  .support a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .support span {
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>YTMP3 VIP</h1>
+  <p class="tagline">Convertisseur YouTube MP3 &amp; MP4 pour Windows</p>
+  <p class="badges">Local &nbsp;•&nbsp; Rapide &nbsp;•&nbsp; Sans pub &nbsp;•&nbsp; Sans limite</p>
+
+  <hr>
+
+  <section>
+    <h2>Pourquoi YTMP3 VIP ?</h2>
+    <p>La conversion se fait <strong>directement sur votre PC</strong>, pas sur des serveurs distants.</p>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Sites en ligne</th>
+          <th>YTMP3 VIP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Vitesse</td><td>File d'attente</td><td><strong>10× plus rapide</strong></td></tr>
+        <tr><td>Publicités</td><td>Partout</td><td><strong>Aucune</strong></td></tr>
+        <tr><td>Limite</td><td>3/jour</td><td><strong>Illimité</strong></td></tr>
+        <tr><td>Qualité max</td><td>Variable</td><td><strong>MP3 320kbps / MP4 4K</strong></td></tr>
+        <tr><td>Vie privée</td><td>Données sur serveurs tiers</td><td><strong>100% local</strong></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Fonctionnalités</h2>
+    <h3>Gratuit</h3>
+    <ul>
+      <li>Téléchargement audio MP3 — 128 / 192 / 256 / 320 kbps</li>
+      <li>Sans publicité, sans limite</li>
+      <li>Barre de progression en temps réel</li>
+    </ul>
+    <h3>VIP — 15€ paiement unique, licence à vie</h3>
+    <ul>
+      <li>Téléchargement vidéo MP4 — SD 480p · HD 720p · FHD 1080p · QHD 1440p · 4K 2160p</li>
+      <li>Playlists complètes en un clic</li>
+      <li>Miniatures YouTube intégrées comme pochettes d'album</li>
+      <li>3 ordinateurs simultanés par licence</li>
+      <li>Toutes les mises à jour futures incluses</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Installation</h2>
+    <p><strong>Prérequis :</strong> Windows 10 / 11 64 bits</p>
+    <ol>
+      <li>Téléchargez <code>YTMP3.VIP_1.1.0_x64-setup.exe</code></li>
+      <li>Lancez l'installateur</li>
+      <li>Suivez les instructions</li>
+    </ol>
+    <blockquote>
+      <strong>Windows SmartScreen affiche un avertissement ?</strong> C'est normal pour un logiciel sans certificat de signature numérique. Cliquez sur <strong>Informations complémentaires</strong> → <strong>Exécuter quand même</strong>. Le logiciel ne contient aucun virus, aucun spyware, aucune barre d'outil.
+    </blockquote>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Utilisation</h2>
+    <ol>
+      <li>Collez une URL YouTube (vidéo ou playlist)</li>
+      <li>Choisissez le format — <strong>MP3</strong> ou <strong>MP4</strong></li>
+      <li>Sélectionnez la qualité</li>
+      <li>Choisissez le dossier de destination</li>
+      <li>Cliquez sur <strong>Télécharger</strong></li>
+    </ol>
+    <p>Les fichiers sont automatiquement nommés. Les playlists sont rangées dans des sous-dossiers. Les MP3 incluent la miniature YouTube comme pochette d'album.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Activation VIP</h2>
+    <ol>
+      <li>Achetez votre licence sur <strong>ytmp3.fr/vip</strong></li>
+      <li>Récupérez votre clé dans l'email de confirmation</li>
+      <li>Entrez la clé au premier lancement</li>
+    </ol>
+    <p>Gérez vos appareils activés (3 max) depuis <strong>ytmp3.fr/vip</strong>.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Configuration requise</h2>
+    <table class="config-table">
+      <tbody>
+        <tr><td>OS</td><td>Windows 10 / 11 64 bits</td></tr>
+        <tr><td>Espace disque</td><td>150 Mo</td></tr>
+        <tr><td>Réseau</td><td>Connexion internet requise</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Support</h2>
+    <div class="support">
+      <a href="mailto:YTMP3@gmx.fr">YTMP3@gmx.fr</a>
+      <span>— réponse sous 48h</span>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
